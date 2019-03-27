@@ -7,7 +7,7 @@ server:
   port: 8001
 spring:
   application:
-    name: PLAT-SERVICE  #服务的名字
+    name: PLAT-SERVICE-DEV  #服务的名字
   profiles: dev
 eureka:
   client:
@@ -18,7 +18,7 @@ server:
   port: 8002
 spring:
   application:
-    name: PLAT-SERVICE  #服务的名字
+    name: PLAT-SERVICE-TEST  #服务的名字
   profiles: test
 eureka:
   client:
