@@ -1,9 +1,13 @@
+spring:
+  profiles:
+    active: dev
+---
 server:
   port: 9527
 spring:
   application:
-    name: MICROSERVICE-ZUUL-GATEWAY
-  profiles:dev
+    name: MICROSERVICE-ZUUL-GATEWAY-DEV
+  profiles: dev
 eureka:
   client:
     service-url:
@@ -12,7 +16,7 @@ eureka:
     instance-id: zuul-gateway-9527
     prefer-ip-address: true
 zuul:
-  prefix: "/bxx" #从什么开头
+  prefix:  "/bxx" #从什么开头
   ignored-services: "*" #忽略
   routes:
     plat.serviceId: plat-service #服务提供者的服务名
@@ -24,8 +28,8 @@ server:
   port: 9528
 spring:
   application:
-    name: MICROSERVICE-ZUUL-GATEWAY
-  profiles:test
+    name: MICROSERVICE-ZUUL-GATEWAY-TEST
+  profiles: test
 eureka:
   client:
     service-url:
@@ -34,8 +38,8 @@ eureka:
     instance-id: zuul-gateway-9527
     prefer-ip-address: true
 zuul:
-  prefix: "/bxx" #从什么开头
-  ignored-services: "*" #忽略
   routes:
     plat.serviceId: plat-service #服务提供者的服务名
     plat.path: /plat/**
+  prefix: "/bxx" #从什么开头
+  ignored-services: "*" #忽略
