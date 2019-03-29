@@ -19,7 +19,7 @@ zuul:
   prefix:  "/bxx" #从什么开头
   ignored-services: "*" #忽略
   routes:
-    plat.serviceId: plat-service #服务提供者的服务名
+    plat.serviceId: plat-service-dev #服务提供者的服务名
     plat.path: /plat/**
 
 ---
@@ -39,7 +39,7 @@ eureka:
     prefer-ip-address: true
 zuul:
   routes:
-    plat.serviceId: plat-service #服务提供者的服务名
+    plat.serviceId: plat-service-dev #服务提供者的服务名
     plat.path: /plat/**
   prefix: "/bxx" #从什么开头
   ignored-services: "*" #忽略
