@@ -22,7 +22,6 @@ zuul:
   routes:
     plat.serviceId: plat-service-dev #服务提供者的服务名
     plat.path: /plat/**
-  routes:
     plat.serviceId: service-brand-dev #服务提供者的服务名
     plat.path: /brand/**
 
