@@ -22,8 +22,9 @@ zuul:
   routes:
     plat.serviceId: plat-service-dev #服务提供者的服务名
     plat.path: /plat/**
-    plat.serviceId: service-brand-dev #服务提供者的服务名
-    plat.path: /brand/**
+  routes:
+    brand.serviceId: service-brand-dev #服务提供者的服务名
+    brand.path: /brand/**
 
 ---
 
@@ -45,7 +46,7 @@ zuul:
     plat.serviceId: plat-service-test #服务提供者的服务名
     plat.path: /plat/**
   routes:
-    plat.serviceId: service-brand-test #服务提供者的服务名
-    plat.path: /brand/**
+    brand.serviceId: service-brand-test #服务提供者的服务名
+    brand.path: /brand/**
   prefix: "/bxx" #从什么开头
   ignored-services: "*" #忽略
