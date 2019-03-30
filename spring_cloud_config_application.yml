@@ -5,40 +5,24 @@ spring:
 
 ---
 server:
-  port: 8003
+  port: 8001
 spring:
   application:
-    name: SERVICE-BRAND-DEV #æœåŠ¡çš„åå­—
+    name: PLAT-SERVICE-DEV #·şÎñµÄÃû×Ö
   profiles: dev
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/bxx
-    username: root
-    password: root
-mybatis-plus:
-  mapper-locations: classpath:cn/solarf/bxx/mapper/*Mapper.xml
-  type-aliases-package: cn.solarf.bxx.domain
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka/  #æœåŠ¡æ³¨å†Œçš„æ³¨å†Œä¸­å¿ƒçš„åœ°å€
+      defaultZone: http://localhost:7001/eureka/  #·şÎñ×¢²áµÄ×¢²áÖĞĞÄµÄµØÖ·
 
 ---
 server:
-  port: 8004
+  port: 8002
 spring:
   application:
-    name: SERVICE-BRAND-TEST #æœåŠ¡çš„åå­—
+    name: PLAT-SERVICE-DEV #·şÎñµÄÃû×Ö
   profiles: test
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/bxx
-    username: root
-    password: root
-mybatis-plus:
-  mapper-locations: classpath:cn/solarf/bxx/mapper/*Mapper.xml
-  type-aliases-package: cn.solarf.bxx.domain
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka/  #æœåŠ¡æ³¨å†Œçš„æ³¨å†Œä¸­å¿ƒçš„åœ°å€
+      defaultZone: http://localhost:7001/eureka/  #·şÎñ×¢²áµÄ×¢²áÖĞĞÄµÄµØÖ·

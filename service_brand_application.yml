@@ -1,0 +1,44 @@
+spring:
+  profiles:
+    active:
+      dev
+
+---
+server:
+  port: 8003
+spring:
+  application:
+    name: SERVICE-BRAND-DEV #服务的名字
+  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bxx
+    username: root
+    password: root
+mybatis-plus:
+  mapper-locations: classpath:cn/solarf/bxx/mapper/*Mapper.xml
+  type-aliases-package: cn.solarf.bxx.domain
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/  #服务注册的注册中心的地址
+
+---
+server:
+  port: 8004
+spring:
+  application:
+    name: SERVICE-BRAND-TEST #服务的名字
+  profiles: test
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bxx
+    username: root
+    password: root
+mybatis-plus:
+  mapper-locations: classpath:cn/solarf/bxx/mapper/*Mapper.xml
+  type-aliases-package: cn.solarf.bxx.domain
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/  #服务注册的注册中心的地址
