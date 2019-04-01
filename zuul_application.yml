@@ -24,6 +24,8 @@ zuul:
     plat.path: /plat/**
     brand.serviceId: service-brand-dev #服务提供者的服务名
     brand.path: /brand/**
+    common.serviceId: common-privoder #服务提供者的服务名
+    common.path: /common/**
 
 ---
 
@@ -46,5 +48,7 @@ zuul:
     plat.path: /plat/**
     brand.serviceId: service-brand-test #服务提供者的服务名
     brand.path: /brand/**
+    common.serviceId: common-privoder #服务提供者的服务名
+    common.path: /common/**
   prefix: "/bxx" #从什么开头
   ignored-services: "*" #忽略
