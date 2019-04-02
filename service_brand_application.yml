@@ -8,7 +8,7 @@ server:
   port: 8003
 spring:
   application:
-    name: SERVICE-BRAND-DEV #服务的名字
+    name: SERVICE-BRAND-DEV #服务的名字 
   profiles: dev
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
