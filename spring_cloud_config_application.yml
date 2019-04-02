@@ -8,12 +8,12 @@ server:
   port: 8001
 spring:
   application:
-    name: PLAT-SERVICE-DEV #服务的名字 
+    name: PLAT-SERVICE-DEV 
   profiles: dev
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka/  #服务注册的注册中心的地址
+      defaultZone: http://localhost:7001/eureka/    
 
 ---
 server:
