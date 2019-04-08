@@ -17,13 +17,13 @@ eureka:
     instance-id: zuul-gateway-9527
     prefer-ip-address: true
 zuul:
-  prefix:  "/bxx" #从什么开头
+  prefix:  "/aigou" #从什么开头
   ignored-services: "*" #忽略
   routes:
     plat.serviceId: plat-service-dev #服务提供者的服务名
     plat.path: /plat/**
     brand.serviceId: service-brand-dev #服务提供者的服务名
-    brand.path: /brand/**
+    brand.path: /product/**
     common.serviceId: common-privoder #服务提供者的服务名
     common.path: /common/**
 

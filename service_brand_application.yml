@@ -5,7 +5,7 @@ spring:
 
 ---
 server:
-  port: 8003
+  port: 8002
 spring:
   application:
     name: SERVICE-BRAND-DEV #服务的名字 
@@ -16,8 +16,8 @@ spring:
     username: root
     password: root
 mybatis-plus:
-  mapper-locations: classpath:cn/solarf/bxx/mapper/*Mapper.xml
-  type-aliases-package: cn.solarf.bxx.domain
+  mapper-locations: classpath:cn/itsource/aigou/mapper/*Mapper.xml
+  type-aliases-package: cn.itsource.aigou.domain
 eureka:
   client:
     service-url:
